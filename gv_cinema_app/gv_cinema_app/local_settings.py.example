@@ -1,0 +1,22 @@
+import os
+import secrets
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = 'pbm_pbm_pbm_pbm_pbm_pbm_pbm_pbm'
+
+DEBUG = True
+ALLOWED_HOSTS = ['*']
+
+# Database
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.environ.get('POSTGRES_DB', 'cem'),
+        'USER': os.environ.get('POSTGRES_USER', 'postgers'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'postgers'),
+        'HOST': os.environ.get('POSTGRES_HOST', 'localhost'),
+        'TEST': {
+            'NAME': 'test_cem'
+        }
+    }
+}
