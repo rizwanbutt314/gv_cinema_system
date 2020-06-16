@@ -34,12 +34,16 @@ body {
 
 .cards-container {
     /*float: left;*/
-    /*display: inline;*/
+    display: block;
+    text-align: center;
 }
 /*Movie Card Style*/
 .movie-card {
-    width: 30%;
+    width: 25%;
     /*border: 1px solid black;*/
+    /* flex-basis: 25%; */
+    display: inline-block;
+    vertical-align: middle;
 }
 .movie-card img {
     width: 200px;

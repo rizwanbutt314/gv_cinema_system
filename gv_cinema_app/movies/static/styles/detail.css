@@ -18,9 +18,19 @@ body {
     margin-bottom: 10px;
 }
 
-.photo-container img {
-    width: 400px;
-    height: 450px;
-    margin-bottom: 0;
-
+.movie-detail{
+    width: 65%;
+    float: right;
 }
+.photo-container{
+    width: 30%;
+    float: left;
+    overflow: hidden;
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+}
+
+
