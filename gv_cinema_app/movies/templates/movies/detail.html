@@ -1,10 +1,40 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+
+    <script type="text/javascript" src="{% static 'js/movies/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/movies/detail.js' %}"></script>
+
+    <link type="text/css" rel="stylesheet" href="{% static 'styles/detail.css' %}">
+    <title>Movie Detail</title>
 </head>
 <body>
+
+<div class="body-container">
+    <div class="header">
+        <h1>Movie Listings @ GV Cinema</h1>
+        <a href="/">Back</a>
+        <h3>Movie name</h3>
+        <p>(PG: Some Violence)</p>
+    </div>
+    <div class="body-content">
+        <div class="photo-container">
+            <img src="/static/images/index.png">
+        </div>
+        <div class="movie-detail">
+            <p><b>Details</b></p>
+            <p><span>Genre: </span> <span> Action, Adventure</span></p>
+            <p><span>Language: </span> <span> Action, Adventure</span></p>
+            <p><span>Duration: </span> <span> Action, Adventure</span></p>
+            <p><span>User Rating: </span> <span> Action, Adventure</span></p>
+            <p><b>Synopsis</b></p>
+            <p>I'm synopsis.......</p>
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>

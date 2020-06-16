@@ -1,10 +1,38 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Movies List</title>
+
+    <script type="text/javascript" src="{% static 'js/movies/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/movies/index.js' %}"></script>
+
+    <link type="text/css" rel="stylesheet" href="{% static 'styles/index.css' %}">
+    <title>Movies List - Index</title>
 </head>
 <body>
+
+<div class="body-container">
+    <div class="header">
+        <h1>Movie Listings @ GV Cinema</h1>
+        <input type="search" placeholder="Search movies..." class="search-term">
+    </div>
+    <div class="body-content">
+        <h3>Popular Movies this month</h3>
+        <div class="cards-container">
+            <div class="movie-card">
+                <img src="/static/images/index.png">
+                <p class="movie-title"><a href="/detail/2">Titanic</a></p>
+                <p class="movie-duration"><span class="duration-num">148</span> min</p>
+                <p class="movie-rating"><span>User Rating: </span> <span class="rating-num"> 5</span></p>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>

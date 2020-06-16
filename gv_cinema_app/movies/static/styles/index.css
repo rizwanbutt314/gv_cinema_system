@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    /*background: #f2f2f2;*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+.body-container {
+    width: 70%;
+    /*border: 5px solid;*/
+    min-height: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+.search-term {
+    width: 30%;
+    border: 1px solid grey;
+    padding: 5px;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+}
+
+.search-term:focus {
+    color: black;
+}
+
+.cards-container {
+    /*float: left;*/
+    /*display: inline;*/
+}
+/*Movie Card Style*/
+.movie-card {
+    width: 30%;
+    /*border: 1px solid black;*/
+}
+.movie-card img {
+    width: 200px;
+    height: 250px;
+    margin-bottom: 0;
+
+}
+
+.movie-card .movie-title {
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.movie-title a {
+    text-decoration: none;
+    color: red;
+}
