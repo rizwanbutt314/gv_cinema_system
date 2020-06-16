@@ -10,6 +10,9 @@ This is a django based movies listing application which provides the listing of 
 * Install required pacakges:<br>
     `pip install -r requirements.txt`
     
+* Move inside application directory:<br>
+   `cd gv_cinema_app`
+
 * Run migration to create db schema:<br>
     `python manage.py migrate`
     <br>

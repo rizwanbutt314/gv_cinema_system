@@ -1,8 +1,9 @@
+from django.db.models import Prefetch
+from rest_framework import mixins, generics, filters, status
+
 from movies.models import Movies
 from movies.serializers import MoviesSerializer
 from gv_cinema_app.common.pagination import ApiResultsSetPagination
-from django.db.models import Prefetch
-from rest_framework import mixins, generics, filters, status
 
 
 class MoviesAPIIndex(mixins.ListModelMixin,
